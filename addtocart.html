@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/addtocart.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- start header -->
+    <header>
+        <div class="navbar">
+          <div class="logo">
+            <img src="./img/the.jpg">
+          </div>
+          <div class="brandname">
+            <h1>Zkomi Mart</h1>
+          </div>
+          <div id="cart-icon" onclick="showCart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+        <li><a href="dashboard.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="addtocart.html"><i class="fas fa-info-circle"></i> Cart</a></li>
+        <li><a href="address.html"><i class="fas fa-envelope"></i> Address</a></li>
+        </ul>
+        </nav>
+        </div>
+        </header>
+        <!-- end -->
+
+        <!-- start -->
+        <section>
+         <div  class="product"    id="product_details">
+          <div id="cart" style="display:none;">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                
+            </ul>
+        </div>
+  </div>
+
+  <button class="btn" onclick="addToCart()">Add to Cart</button>
+  <button class="btn" onclick="buyNow()">Buy Now</button>
+          </section>
+        <!-- end -->
+    <script src="./js/addtocart.js"></script>
+</body>
+</html>
